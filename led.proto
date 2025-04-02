@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message LedCommand {
+  enum CommandType {
+    LED_OFF = 0;
+    LED_ON = 1;
+  }
+  CommandType command = 1;
+}
